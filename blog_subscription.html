@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<!-- This form does not actually process inputs
+    and is only used to demonstrate the usage of the "form" tag -->
+
+<html>
+<head>
+    <title>
+        Evgeny D. Cruz | Blog Subscription
+    </title> 
+</head>
+
+<body>
+    <hr>
+    <nav>
+        <a href="index.html">Home</a> | 
+        <a href="academics.html">Academics</a> | 
+        <a href="recommended_reading.html">Recommended Readings</a> | 
+        <a href="blog.html">Blog</a>
+    </nav>
+    <hr>
+
+    <h1> Blog Subscription </h1>
+
+    Subscribe now to receive the latest updates from my blog.
+    <br> <br>
+
+    <form action="/successful_subscription.html" method="post">
+
+        Name: <input type="text" id="name" name="name" />
+        <br>
+
+        E-mail: <input type="email" id="email" name="email" />
+        <br> <br>
+
+        How often do you want to receive updates?
+        <br>
+        <input type="radio" name="update_frequency" value="daily" id="daily" />
+        <label for="daily"> Daily </label>
+        <br>
+        <input type="radio" name="update_frequency" value="weekly" id="weekly" />
+        <label for="weekly"> Weekly </label>
+        <br>
+        <input type="radio" name="update_frequency" value="monthly" id="monthly" />
+        <label for="monthly"> Monthly </label>
+        <br> <br>
+
+        <input type="checkbox" value="Consent" /> I consent to receiving blog updates through the e-mail address indicated above. <br>
+        <br>
+
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+</html>
